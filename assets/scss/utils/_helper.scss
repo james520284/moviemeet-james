@@ -1,0 +1,190 @@
+$max: 50;
+
+@for $i from 0 through $max {.fz-#{$i} {font-size: $i*4px;}}
+// 字體大小使用說明：四的倍數跳動
+// .fz-1 = font size 4px
+// .fz-2 = font size 8px
+// .fz-3 = font size 12px
+// .fz-4 = font size 16px
+// .fz-5 = font size 20px
+// .fz-6 = font size 24px
+// .....以此類推到
+// .fz-50 = font size 200px
+
+
+
+@for $i from 0 through $max {
+    .fz-sm#{$i} {@include rwd-sm-max {font-size: $i*4px;}}
+    .fz-md#{$i} {@include rwd-md-max {font-size: $i*4px;}}
+    .fz-lg#{$i} {@include rwd-lg-max {font-size: $i*4px;}}
+}
+//desktop first 從桌機開始刻到手機
+// RWD字體大小使用說明：加入三種斷點
+// .fz-sm4 = sm 斷點以下 font size 16px
+// .fz-sm5 = sm 斷點以下 font size 20px
+// .fz-sm6 = sm 斷點以下 font size 24px
+// .....以此類推
+// .fz-md7 = md 斷點以下 font size 28px
+// .fz-md8 = md 斷點以下 font size 32px
+// .fz-md9 = md 斷點以下 font size 36px
+// .....以此類推
+// .fz-lg10 = lg 斷點以下 font size 40px
+// .fz-lg11 = lg 斷點以下 font size 44px
+// .fz-lg12 = lg 斷點以下 font size 48px
+// .....以此類推
+
+
+
+.fz-mini{font-size: 14px;}
+.fz-sm-mini {@include rwd-sm-max {font-size: 14px;}}
+.fz-md-mini {@include rwd-md-max {font-size: 14px;}}
+.fz-lg-mini {@include rwd-lg-max {font-size: 14px;}}
+//設計稿上有 14px 特殊字體大小 
+// .fz-mini = font size 14px
+// .fz-sm-mini = sm 斷點以下 font size 14px
+// .fz-md-mini = md 斷點以下 font size 14px
+// .fz-lg-mini = lg 斷點以下 font size 14px
+
+
+.text-gray-100{color: $gray-100;}
+.text-gray-200{color: $gray-200;}
+.text-gray-300{color: $gray-300;}
+.text-gray-400{color: $gray-400;}
+.text-gray-500{color: $gray-500;}
+.text-gray-600{color: $gray-600;}
+// 灰階字色使用說明
+// .text-gray-100 = color $gray-100 = 設計稿的 Neutral / 50  #FAFAFA
+// .text-gray-200 = color $gray-200 = 設計稿的 Neutral / 200 #E5E5E5
+// .....以此類推到
+// .text-gray-600 = color $gray-600 = 設計稿的 Neutral / 950 #0A0A0A
+
+
+
+@for $i from 1 through 9 {.fw-#{$i} {font-weight: $i*100;}}
+//字重粗細使用說明
+// .fw-1 = font weight 100
+// .fw-2 = font weight 200
+// .fw-3 = font weight 300
+// .fw-4 = font weight 400  = 設計稿的regular
+// .fw-5 = font weight 500
+// .fw-6 = font weight 600
+// .fw-7 = font weight 700  = 設計稿的bold
+// .fw-8 = font weight 800
+// .fw-9 = font weight 900
+
+
+@for $i from 0 through $max {.border-r#{$i} {border-radius: $i*4px;}}
+//圓角弧度使用說明：四的倍數跳動
+// .border-r1 = border-radius 4px 
+// .border-r2 = border-radius 8px
+// .border-r3 = border-radius 12px
+// .....以此類推到
+// .border-r50 = border-radius 200px
+
+
+
+
+
+@for $i from 0 through $max {
+    .mt#{$i} {margin-top: $i*4px;}
+    .mb#{$i} {margin-bottom: $i*4px;}
+    .ml#{$i} {margin-left: $i*4px;}
+    .mr#{$i} {margin-right: $i*4px;}
+    .mx#{$i} {margin-left: $i*4px;margin-right: $i*4px;}
+    .my#{$i} {margin-top: $i*4px;margin-bottom: $i*4px;}
+    .m#{$i} {margin: $i*4px $i*4px;}
+    .pt#{$i} {padding-top: $i*4px;}
+    .pb#{$i} {padding-bottom: $i*4px;}
+    .pl#{$i} {padding-left: $i*4px;}
+    .pr#{$i} {padding-right: $i*4px;}
+    .px#{$i} {padding-left: $i*4px;padding-right: $i*4px;}
+    .py#{$i} {padding-top: $i*4px;padding-bottom: $i*4px;}
+    .p#{$i} {padding: $i*4px $i*4px;}
+}
+//margin和padding使用說明：四的倍數跳動
+// .mt1 = margin-top 4px 
+// .mb2 = margin-bottom 8px 
+// .ml3 = margin-left 12px 
+// .mr4 = margin-right 16px 
+// .mx5 = margin-left 20px + margin-right 20px
+// .my6 = margin-top 24px + margin-bottom 24px
+// .....以此類推
+
+// .pt1 = padding-top 4px 
+// .pb2 = padding-bottom 8px 
+// .pl3 = padding-left 12px 
+// .pr4 = padding-right 16px 
+// .px5 = padding-left 20px + padding-right 20px
+// .py6 = padding-top 24px + padding-bottom 24px
+// .....以此類推
+
+
+
+@for $i from 0 through $max {
+    .mt-sm#{$i} {@include rwd-sm-max {margin-top: $i*4px;}}
+    .mb-sm#{$i} {@include rwd-sm-max {margin-bottom: $i*4px;}}
+    .ml-sm#{$i} {@include rwd-sm-max {margin-left: $i*4px;}}
+    .mr-sm#{$i} {@include rwd-sm-max {margin-right: $i*4px;}}
+    .mx-sm#{$i} {@include rwd-sm-max {margin-left: $i*4px;margin-right: $i*4px;}}
+    .my-sm#{$i} {@include rwd-sm-max {margin-top: $i*4px;margin-bottom: $i*4px;}}
+    .m-sm#{$i} {@include rwd-sm-max {margin: $i*4px $i*4px;}}
+
+    .mt-md#{$i} {@include rwd-md-max {margin-top: $i*4px;}}
+    .mb-md#{$i} {@include rwd-md-max {margin-bottom: $i*4px;}}
+    .ml-md#{$i} {@include rwd-md-max {margin-left: $i*4px;}}
+    .mr-md#{$i} {@include rwd-md-max {margin-right: $i*4px;}}
+    .mx-md#{$i} {@include rwd-md-max {margin-left: $i*4px;margin-right: $i*4px;}}
+    .my-md#{$i} {@include rwd-md-max {margin-top: $i*4px;margin-bottom: $i*4px;}}
+    .m-md#{$i} {@include rwd-md-max {margin: $i*4px $i*4px;}}
+
+    .mt-lg#{$i} {@include rwd-lg-max {margin-top: $i*4px;}}
+    .mb-lg#{$i} {@include rwd-lg-max {margin-bottom: $i*4px;}}
+    .ml-lg#{$i} {@include rwd-lg-max {margin-left: $i*4px;}}
+    .mr-lg#{$i} {@include rwd-lg-max {margin-right: $i*4px;}}
+    .mx-lg#{$i} {@include rwd-lg-max {margin-left: $i*4px;margin-right: $i*4px;}}
+    .my-lg#{$i} {@include rwd-lg-max {margin-top: $i*4px;margin-bottom: $i*4px;}}
+    .m-lg#{$i} {@include rwd-lg-max {margin: $i*4px $i*4px;}}
+
+    .pt-sm#{$i} {@include rwd-sm-max {padding-top: $i*4px;}}
+    .pb-sm#{$i} {@include rwd-sm-max {padding-bottom: $i*4px;}}
+    .pl-sm#{$i} {@include rwd-sm-max {padding-left: $i*4px;}}
+    .pr-sm#{$i} {@include rwd-sm-max {padding-right: $i*4px;}}
+    .px-sm#{$i} {@include rwd-sm-max {padding-left: $i*4px;padding-right: $i*4px;}}
+    .py-sm#{$i} {@include rwd-sm-max {padding-top: $i*4px;padding-bottom: $i*4px;}}
+    .p-sm#{$i} {@include rwd-sm-max {padding: $i*4px $i*4px;}}
+
+    .pt-md#{$i} {@include rwd-md-max {padding-top: $i*4px;}}
+    .pb-md#{$i} {@include rwd-md-max {padding-bottom: $i*4px;}}
+    .pl-md#{$i} {@include rwd-md-max {padding-left: $i*4px;}}
+    .pr-md#{$i} {@include rwd-md-max {padding-right: $i*4px;}}
+    .px-md#{$i} {@include rwd-md-max {padding-left: $i*4px;padding-right: $i*4px;}}
+    .py-md#{$i} {@include rwd-md-max {padding-top: $i*4px;padding-bottom: $i*4px;}}
+    .p-md#{$i} {@include rwd-md-max {padding: $i*4px $i*4px;}}
+
+    .pt-lg#{$i} {@include rwd-lg-max {padding-top: $i*4px;}}
+    .pb-lg#{$i} {@include rwd-lg-max {padding-bottom: $i*4px;}}
+    .pl-lg#{$i} {@include rwd-lg-max {padding-left: $i*4px;}}
+    .pr-lg#{$i} {@include rwd-lg-max {padding-right: $i*4px;}}
+    .px-lg#{$i} {@include rwd-lg-max {padding-left: $i*4px;padding-right: $i*4px;}}
+    .py-lg#{$i} {@include rwd-lg-max {padding-top: $i*4px;padding-bottom: $i*4px;}}
+    .p-lg#{$i} {@include rwd-lg-max {padding: $i*4px $i*4px;}}
+}
+
+//desktop first 從桌機開始刻到手機
+// RWD之margin和padding使用說明：加入三種斷點
+// .mt-sm1 = sm 斷點以下 margin-top 4px 
+// .mb-sm2 = sm 斷點以下 margin-bottom 8px 
+// .ml-md3 = md 斷點以下 margin-left 12px 
+// .mr-md4 = md 斷點以下 margin-right 16px 
+// .mx-lg5 = lg 斷點以下 margin-left 20px + margin-right 20px
+// .my-lg6 = lg 斷點以下 margin-top 24px + margin-bottom 24px
+// .....以此類推
+
+// .pt-sm1 = sm 斷點以下 padding-top 4px 
+// .pb-sm2 = sm 斷點以下 padding-bottom 8px 
+// .pl-md3 = md 斷點以下 padding-left 12px 
+// .pr-md4 = md 斷點以下 padding-right 16px 
+// .px-lg5 = lg 斷點以下 padding-left 20px + padding-right 20px
+// .py-lg6 = lg 斷點以下 padding-top 24px + padding-bottom 24px
+// .....以此類推
+
