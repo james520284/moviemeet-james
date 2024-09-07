@@ -1,0 +1,141 @@
+.myCosplay-main{
+    .sec1{
+        .deco{
+            top:-8px;
+            left:-64px;
+            transform: scale(1.4);
+        }
+        .btn-close{
+            top: -12px;
+            right: 0;
+            opacity: 1;
+        }
+        .modal-content{
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        input[type="file"]{
+            display: none;
+        }
+        .uploadAvatarImg{
+            cursor: pointer;
+        }
+        .uploadStyle{
+            width: 100%;
+            height: 150px;
+            border: 1px solid $gray-300;
+            border-radius: 8px;
+        }
+
+        ::placeholder{
+            color: $gray-400;
+        }
+        @include rwd-md-max {
+            .deco {
+                top: -16px;
+                transform: scale(1);
+            }
+        }
+        @include rwd-sm-max {
+            .deco {
+                top: -28px;
+                left: -44px;
+                transform: scale(.6);
+            }
+            .modal-content {
+                max-width: 320px;
+            }
+        }
+    }
+    .sec2{
+        .card{
+            width: 18rem;
+        }
+        @include rwd-sm-max {
+            .card {
+                width: 95%;
+            }
+        }
+        .cosplayAvatar{
+            width: 100%;
+            height: 280px;
+            opacity: .5;
+            transition: .5s;
+            &-1{
+                background-image: url(../images/avatar-1.png);
+            }
+            &-2 {
+                background-image: url(../images/avatar-2.png);
+            }
+            &-3 {
+                background-image: url(../images/avatar-3.png);
+            }
+            &-4 {
+                background-image: url(../images/avatar-4.png);
+            }
+            &-5 {
+                background-image: url(../images/avatar-5.png);
+            }
+            &-6 {
+                background-image: url(../images/avatar-6.png);
+            }
+
+            &:hover{
+                opacity: 1;
+                box-shadow: 0 0 10px 1px rgba($color: #ffffff, $alpha: .9) ;
+                transform: scale(1.05);
+            }
+            &.active {
+                opacity: 1;
+                transform: scale(1.05);
+                box-shadow: 0 0 10px 1px rgba($color: $primary, $alpha: 1);
+            }
+        }
+        @include rwd-lg-max{
+            .cosplayAvatar:hover{
+                box-shadow: 0 0 10px 1px rgba($color: #ffffff, $alpha: 1);
+            } 
+            .cosplayAvatar.active{
+                box-shadow: 0 0 10px 1px rgba($color: $primary, $alpha: 1);
+            }   
+        }
+
+        .use-btn{
+            background-color: rgba(0, 0, 0,.6);
+            color: white;
+            border: 1px solid white;
+            opacity: 0;
+            transition: .5s;
+            span:last-child {
+                display: none;
+            }
+            &:hover{
+                opacity: 1;
+            }
+            &.active {
+                opacity: 1;
+                border: 1px solid $primary;
+                color: $primary;
+            }
+            &.active span:last-child {
+                display: block;
+            }
+            &.active span:first-child{
+                display: none;
+            }
+        }
+        .ic-music{
+            top:16px;
+            left: 16px;
+            opacity: .5;
+            width: 24px;
+            height: 24px;
+        }
+        .card-title{
+            background-image: linear-gradient(150deg,rgb(255, 255, 255, 0) 0%,rgb(255, 255, 255,.3) 100%);
+            border-radius: 0px 100px 100px 0px;
+        }
+        
+    }
+}

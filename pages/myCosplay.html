@@ -5,14 +5,167 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>我與劇中主角相會時</title>
 </head>
 
 <body>
     <%- include('./layout/header'); -%>
 
     <main class="myCosplay-main">
-        <a href="#" class="btn btn-primary"></a>
+        <section class="sec1 py16 py-sm6">
+            <div class="container">
+                <div class="d-flex align-items-lg-center">
+                    <div class="d-flex flex-column position-relative ml20 ml-sm12">
+                        <img src="../assets/images/deco/001.png" alt="deco" class="deco position-absolute">
+                        <h1 class="fz-md8 fz-sm5">角色頭像卡</h1>
+                        <h4 class="text-gray-300 fz-md5 fz-sm-mini">Cosplay我的最愛角色</h4>
+                    </div>
+                    <!-- +新角色 Button trigger modal -->
+                    <a href="#" class="ms-auto add-btn fz-7 fz-sm5 pr3 d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#addAvatarModal"><i class="bi bi-plus-circle mr4"></i><span class="d-none d-sm-block">新角色</span></a>
+                </div>
+
+                <!-- +新角色Modal -->
+                <div class="modal fade" id="addAvatarModal" tabindex="-1" aria-labelledby="addAvatarModal" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-gray-600 border broder-white mt8">
+                            <div class="modal-header position-relative">
+                                <h5 class="modal-title text-primary" id="addAvatarModalLabel">加入新角色</h5>
+                                <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-circle text-white fz-6 bg-gray-600 "></i></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="#">
+                                    <div class="mb7">
+                                        <span class="mb2">角色照</span>
+                                        <label for="avartarImg" class="form-label uploadAvatarImg w-100">
+                                            <div class="uploadStyle d-flex justify-content-center align-items-center fz-8"><i class="bi bi-plus-lg"></i></div>
+                                        </label>
+                                        <input type="file" accept="image/*" class="form-control bg-gray-600" id="avartarImg" name="avartarImg" placeholder="此角色在劇中的名字">
+                                    </div>
+                                    <div class="mb7">
+                                        <label for="avartarName" class="form-label">角色名</label>
+                                        <input type="text" class="form-control bg-gray-600" id="avartarName" name="avartarName" placeholder="此角色在劇中的名字">
+                                    </div>
+                                    <div class="mb7">
+                                        <label for="dramaName" class="form-label">劇名</label>
+                                        <input type="text" class="form-control bg-gray-600" id="dramaName" name="dramaName" placeholder="這是哪一部影劇">
+                                    </div>
+                                    <div class="mb7">
+                                        <label for="actorName" class="form-label">演員名</label>
+                                        <input type="text" class="form-control bg-gray-600" id="actorName" name="actorName" placeholder="這是哪一位演員">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer ">
+                                <button type="submit" class="btn btn-outline-primary w-100">確定加入</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="sec2 mb20">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-sm-6 col-lg-3 d-flex justify-content-center">
+                        <div class="card bg-gray-600 text-gray-300" >
+                            <div class="cosplayAvatar cosplayAvatar-1 bg-cover border-r3 position-relative mb4 d-flex justify-content-center align-items-end">
+                                <a href="#" class="use-btn stretched-link py3 px9 border-r25 fz-5 mb4 py-sm2 px-sm6 fz-sm4"><span>更換</span><span>正在Cos</span></a>
+                            </div>
+                            <img src="../assets/images/icon/wave-sound.png" alt="ic-music" class="ic-music position-absolute">
+                            <div class="card-body pt-sm0">
+                                <div class="d-flex justify-content-between align-items-center mb4">
+                                    <h5 class="card-title mb0 text-white py1 pr10">浩克</h5>
+                                    <i class="bi bi-pencil fz-5 fz-sm4 "></i>
+                                </div>
+                                <span class="d-block fz-sm4 fz-5 mb-sm0">復仇者聯盟</span>
+                                <span class="d-block fz-sm4 fz-5">馬克．魯法洛 飾</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 d-flex justify-content-center">
+                        <div class="card bg-gray-600 text-gray-300" >
+                            <div class="cosplayAvatar cosplayAvatar-2 bg-cover border-r3 position-relative mb4 d-flex justify-content-center align-items-end active">
+                                <a href="#" class="use-btn stretched-link py3 px9 border-r25 fz-5 mb4 py-sm2 px-sm6 fz-sm4 active"><span>更換</span><span>正在Cos</span></a>
+                            </div>
+                            <img src="../assets/images/icon/wave-sound.png" alt="ic-music" class="ic-music position-absolute">
+                            <div class="card-body pt-sm0">
+                                <div class="d-flex justify-content-between align-items-center mb4">
+                                    <h5 class="card-title mb0 text-white py1 pr10">劉娜比</h5>
+                                    <i class="bi bi-pencil fz-5 fz-sm4 "></i>
+                                </div>
+                                <span class="d-block fz-sm4 fz-5 mb-sm0">無法抗拒的他</span>
+                                <span class="d-block fz-sm4 fz-5">韓韶禧 飾</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 d-flex justify-content-center">
+                        <div class="card bg-gray-600 text-gray-300" >
+                            <div class="cosplayAvatar cosplayAvatar-3 bg-cover border-r3 position-relative mb4 d-flex justify-content-center align-items-end">
+                                <a href="#" class="use-btn stretched-link py3 px9 border-r25 fz-5 mb4 py-sm2 px-sm6 fz-sm4">更換</a>
+                            </div>
+                            <img src="../assets/images/icon/wave-sound.png" alt="ic-music" class="ic-music position-absolute">
+                            <div class="card-body pt-sm0">
+                                <div class="d-flex justify-content-between align-items-center mb4">
+                                    <h5 class="card-title mb0 text-white py1 pr10">薛芳菲</h5>
+                                    <i class="bi bi-pencil fz-5 fz-sm4 "></i>
+                                </div>
+                                <span class="d-block fz-sm4 fz-5 mb-sm0">墨雨雲間</span>
+                                <span class="d-block fz-sm4 fz-5">吳謹言 飾</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 d-flex justify-content-center">
+                        <div class="card bg-gray-600 text-gray-300" >
+                            <div class="cosplayAvatar cosplayAvatar-4 bg-cover border-r3 position-relative mb4 d-flex justify-content-center align-items-end">
+                                <a href="#" class="use-btn stretched-link py3 px9 border-r25 fz-5 mb4 py-sm2 px-sm6 fz-sm4">更換</a>
+                            </div>
+                            <img src="../assets/images/icon/wave-sound.png" alt="ic-music" class="ic-music position-absolute">
+                            <div class="card-body pt-sm0">
+                                <div class="d-flex justify-content-between align-items-center mb4">
+                                    <h5 class="card-title mb0 text-white py1 pr10">巨型娃娃</h5>
+                                    <i class="bi bi-pencil fz-5 fz-sm4 "></i>
+                                </div>
+                                <span class="d-block fz-sm4 fz-5 mb-sm0">魷魚遊戲</span>
+                                <span class="d-block fz-sm4 fz-5">巨型娃娃 飾</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 d-flex justify-content-center">
+                        <div class="card bg-gray-600 text-gray-300" >
+                            <div class="cosplayAvatar cosplayAvatar-5 bg-cover border-r3 position-relative mb4 d-flex justify-content-center align-items-end">
+                                <a href="#" class="use-btn stretched-link py3 px9 border-r25 fz-5 mb4 py-sm2 px-sm6 fz-sm4">更換</a>
+                            </div>
+                            <img src="../assets/images/icon/wave-sound.png" alt="ic-music" class="ic-music position-absolute">
+                            <div class="card-body pt-sm0">
+                                <div class="d-flex justify-content-between align-items-center mb4">
+                                    <h5 class="card-title mb0 text-white py1 pr10">五條悟</h5>
+                                    <i class="bi bi-pencil fz-5 fz-sm4 "></i>
+                                </div>
+                                <span class="d-block fz-sm4 fz-5 mb-sm0">咒術迴戰</span>
+                                <span class="d-block fz-sm4 fz-5">五條悟 飾</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 d-flex justify-content-center">
+                        <div class="card bg-gray-600 text-gray-300" >
+                            <div class="cosplayAvatar cosplayAvatar-6 bg-cover border-r3 position-relative mb4 d-flex justify-content-center align-items-end">
+                                <a href="#" class="use-btn stretched-link py3 px9 border-r25 fz-5 mb4 py-sm2 px-sm6 fz-sm4">更換</a>
+                            </div>
+                            <img src="../assets/images/icon/wave-sound.png" alt="ic-music" class="ic-music position-absolute">
+                            <div class="card-body pt-sm0">
+                                <div class="d-flex justify-content-between align-items-center mb4">
+                                    <h5 class="card-title mb0 text-white py1 pr10">阿成</h5>
+                                    <i class="bi bi-pencil fz-5 fz-sm4 "></i>
+                                </div>
+                                <span class="d-block fz-sm4 fz-5 mb-sm0">當男人戀愛時</span>
+                                <span class="d-block fz-sm4 fz-5">邱澤 飾</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <%- include('./layout/footer'); -%>

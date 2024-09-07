@@ -4,11 +4,14 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import './vendor/variables';
 @import "../../node_modules/bootstrap";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 @import './utils/mixin';
 @import './utils/helper';
 
 @import './base/base';
+
+@import './component/button';
 
 @import './layout/header.scss';
 @import './layout/footer.scss';
