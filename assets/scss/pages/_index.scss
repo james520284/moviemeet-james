@@ -1,3 +1,99 @@
-.index-title {
-  font-size: 100px;
+.index-main{
+
+  .index-title {
+    font-size: 100px;
+  }
+  
+  
+  .btn-close {
+    top: 0px;
+    right: 6px;
+    opacity: 1;
+    padding: 0;
+  }
+  
+  .modal-content {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  input[type="text"],
+  input[type="url"] {
+    color: $gray-300;
+  }
+  
+  input:focus  {
+    background-color: transparent;
+  }
+  .subtitle{
+    width: 25%;
+  }
+  .option{
+    width: 75%;
+  }
+  input[type="file"] {
+    display: none;
+  }
+  
+  .uploadDramaImg,
+  .changeDramaImg {
+    cursor: pointer;
+  }
+  
+  .uploadStyle {
+    width: 100px;
+    height: 100px;
+    border: 1px solid $gray-300;
+    border-radius: 8px;
+  }
+  
+  ::placeholder {
+    color: $gray-400;
+  }
+
+  .img-item {
+    position: relative;
+    width: 100%;
+    height: 100px;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    .btn-close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(4px, -8px);
+    }
+  }
+
+  .hashtag a+a {
+    margin-left: 8px;
+  }
+  
+  @include rwd-sm-max {
+    .modal-content {
+      max-width: 320px;
+    }
+    .subtitle {
+      width: 100%;
+    }
+
+    .option {
+      width: 100%;
+    }
+    .uploadStyle {
+      width: 80px;
+      height: 80px;
+    }
+    .img-item{
+      height: 60px;
+    }
+  }
+
+  
+  
 }
