@@ -5,12 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>我與劇中主角相會時</title>
-    <script type="module" crossorigin src="/moviemeet-james/assets/main-b7c7dafd.js"></script>
-    <link rel="stylesheet" href="/moviemeet-james/assets/main-c2177528.css">
+    <script type="module" crossorigin src="/moviemeet-james/assets/main-4021facb.js"></script>
+    <link rel="stylesheet" href="/moviemeet-james/assets/main-8f6d9fc8.css">
   </head>
   <body>
-    
-    <a href="myCosplay.html" class="btn btn-primary">頭像角色卡傳送門</a>
+        <main class="index-main">
+      <a href="myCosplay.html" class="btn btn-primary">頭像角色卡傳送門</a>
+      <a href="#" data-bs-toggle="modal" data-bs-target="#chatModal" class="btn btn-primary">聊串編輯頁modal</a>
+  
+      <!-- 聊串modal開始 -->
+      <div class="modal fade" id="chatModal" tabindex="-1" aria-labelledby="chatModal" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-gray-600 border broder-white mt8">
+                            <div class="modal-header position-relative">
+                                <h5 class="modal-title text-primary fz-sm5" id="chatModalLabel">發佈聊串</h5>
+                                <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-circle text-white fz-6 bg-gray-600 "></i></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="#">
+                                  <div class="mb7 mb-sm6 d-flex  flex-column flex-sm-row align-items-sm-center">
+                                    <div class="subtitle mb-sm2">
+                                      <span class="text-danger mr1">*</span><span>我要聊</span>
+                                    </div>
+                                    <div class="option">
+                                      <input type="radio" class="btn-check" name="chatType" id="normalChatType" autocomplete="off" checked>
+                                      <label class="btn btn-outline-primary mr2 px8 px-sm4" for="normalChatType">劇情</label>
+                                      <input type="radio" class="btn-check" name="chatType" id="kusoChatType" autocomplete="off">
+                                      <label class="btn btn-outline-primary px8 px-sm4" for="kusoChatType">劇梗</label>
+                                    </div>
+                                  </div>
+                                  <div class="mb7 mb-sm6 d-flex  flex-column flex-sm-row align-items-sm-center">
+                                    <div class="subtitle mb-sm2">
+                                      <span class="text-danger mr1">*</span><span>有沒有雷</span>
+                                    </div>
+                                    <div class="option">
+                                      <input type="radio" class="btn-check" name="spoilType" id="noSpoilType" autocomplete="off" checked>
+                                      <label class="btn btn-outline-primary mr2 px8 px-sm4" for="noSpoilType">無雷</label>
+                                      <input type="radio" class="btn-check" name="spoilType" id="littleSpoilType" autocomplete="off">
+                                      <label class="btn btn-outline-primary mr2 px8 px-sm4" for="littleSpoilType">微雷</label>
+                                      <input type="radio" class="btn-check" name="spoilType" id="suoerSpoilType" autocomplete="off">
+                                      <label class="btn btn-outline-primary px8 px-sm4" for="suoerSpoilType">超雷</label>
+                                    </div>
+                                  </div>
+                                  <div class="mb7 mb-sm6">
+                                      <span class="text-danger mr1">*</span><span class="mb2">劇照</span><span class="text-gray-300 fz-mini">&nbsp;(最多6張)</span>
+                                      <label for="dramaImg" class="form-label uploadDramaImg w-100">
+                                          <div class="uploadStyle d-flex justify-content-center align-items-center fz-8 fz-sm5 mb3"><i class="bi bi-plus-lg"></i></div>
+                                      </label>
+                                      <input type="file" accept="image/*" class="form-control bg-gray-600" id="dramaImg" name="dramaImg" value="">
+                                      <div class="row gy-4">
+                                        <div class="col-4">
+                                          <div class="img-item">
+                                            <img src="/moviemeet-james/assets/drama-1-140455d7.jpg" alt="drama">
+                                            <button type="button" class="btn-close p0" aria-label="Close"><i class="bi bi-x-circle text-white  bg-gray-600 border-r25"></i></button>
+                                          </div>
+                                        </div>
+                                        <div class="col-4">
+                                          <div class="img-item">
+                                            <img src="/moviemeet-james/assets/drama-2-b46cea3a.png" alt="drama">
+                                            <button type="button" class="btn-close p0" aria-label="Close"><i class="bi bi-x-circle text-white  bg-gray-600 border-r25"></i></button>
+                                          </div>
+                                        </div>
+                                        <div class="col-4">
+                                          <div class="img-item">
+                                            <img src="/moviemeet-james/assets/drama-3-5274edc7.jpg" alt="drama">
+                                            <button type="button" class="btn-close p0" aria-label="Close"><i class="bi bi-x-circle text-white  bg-gray-600 border-r25"></i></button>
+                                          </div>
+                                        </div>
+                                        <div class="col-4">
+                                          <div class="img-item">
+                                            <img src="/moviemeet-james/assets/drama-4-462733c0.jpg" alt="drama">
+                                            <button type="button" class="btn-close p0" aria-label="Close"><i class="bi bi-x-circle text-white  bg-gray-600 border-r25"></i></button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div class="mb7 mb-sm3">
+                                      <label for="chatHashtag" class="form-label">#Hashtag</label>
+                                      <div class="d-flex align-items-center mb2">
+                                        <input type="text" class="form-control bg-gray-600" id="chatHashtag" name="chatHashtag" placeholder="每一組hashtag最多10個字" value="">
+                                        <a href="#"><i class="bi bi-plus-circle text-primary ml4"></i></a>
+                                      </div>
+                                      <div class="hashtag d-flex align-items-center">
+                                        <a href="#" class="text-dark bg-primary px2 py1 fz-3 fw-7 rounded">#熬夜都想看</a>
+                                        <a href="#" class="text-dark bg-primary px2 py1 fz-3 fw-7 rounded">#女主角好正</a>
+                                      </div>
+                                  </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer ">
+                                <button type="submit" class="btn btn-outline-primary w-100">發佈</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </main>
 
     
     
