@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+        
+        <title>我與劇中主角相會時</title>
+    </head>
+    <body>
+        <%- include('./layout/header'); -%>
+        <main class="dramaPost-main mt20">
+            <div class="container">
+                <div class="row gx-lg-5 gy-3">
+                    <div class="col-lg-5">
+                        <div class="bg-gray-500 p6 border-r2">
+                            <div class="function d-flex flex-column  flex-sm-row align-items-sm-center mb4">
+                                <a href="#" class="chat-btn py2 px5 text-gray-500 border-r1 d-flex justify-content-center align-items-center mr2 mr-sm0 mb-sm2">
+                                    <span class="chat-ic material-symbols-outlined mr1">add_comment</span>
+                                    <span>發聊串</span>
+                                </a>
+                                <div class="d-flex align-items-center ms-auto w-100">
+                                    <form class="search d-flex ms-auto position-relative mr2">
+                                        <input class="form-control" type="search" placeholder="#聊串編號" aria-label="Search">
+                                        <a href="#" class="search-btn p0 position-absolute" type="submit"><i class="bi bi-search"></i></a>
+                                    </form>
+                                    <div class="sort-btn p2 rounded d-flex">
+                                        <a href="#">
+                                            <span class="material-symbols-outlined">instant_mix</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="intro-slide position-relative mb4">
+                                <img src="../assets/images/drama-12.png" alt="drama">
+                                <h1 class="drama-title py4 px6 text-white fz-6 fw-4 position-absolute">墨雨雲間</h1>
+                            </div>
+                            <div class="d-flex">
+                                <ul class="aside-link text-white pr9 border-end">
+                                    <li class="d-flex align-items-center mb6">
+                                        <i class="fi fi-ss-info mr1"></i>
+                                        <a href="#">劇情介紹</a>
+                                    </li>
+                                    <li class="d-flex align-items-center mb6">
+                                        <i class="fi fi-ss-play mr1"></i>
+                                        <a href="#">劇曲列表</a>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="fi fi-ss-users-class mr1"></i>
+                                        <a href="#">劇友推坑</a>
+                                    </li>
+                                </ul>
+                                <ul class="data text-whit pl9">
+                                    <li class="d-flex align-items-center mb6">
+                                        <i class="bi bi-chat-right-text mr1"></i>
+                                        <span href="#">聊劇串數：268</span>
+                                    </li>
+                                    <li class="d-flex align-items-center mb6">
+                                        <i class="bi bi-people mr1"></i>
+                                        <span href="#">聊劇人數：1.3K</span>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="bi bi-activity mr1"></i>
+                                        <span href="#">共振次數：6.5M</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="wrap pl9 pb4  position-relative">
+                            <div class="chat-card bg-gray-500 border-r2 p6">
+                                <div class="chat-card-head d-flex align-items-center mb2">
+                                    <a href="#" class="poster-avatar rounded-circle mr2">
+                                        <img src="../assets/images/avatar-6.png" alt="avartar" class="rounded-circle">
+                                    </a>
+                                    <div class="chat-info d-flex align-items-center justify-content-between w-100">
+                                        <div class="intro d-flex flex-column flex-sm-row ">
+                                            <h2 class="fz-5 fw-4 mr5 ">串主 阿成</h2>
+                                            <div>
+                                                <span class="fz-3 text-gray-300">當男人戀愛時｜</span>
+                                                <a href="#" class="fz-3 text-gray-300"><i><ins>嚼勁先生</ins>&nbsp;cos</i></a>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="func mr5 mr-sm1">
+                                                <a href="#"><i class="bi bi-three-dots d-block"></i></a>
+                                                <span class="d-block text-gray-300">#1</span>
+                                            </div>
+                                            <a href="#" class="like-btn-head text-center bg-gray-400 border-r1 text-gray-300">
+                                                <i class="bi bi-activity d-block fz-4"></i>
+                                                <span class="d-block fz-3">7979</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat-card-body mb6">
+                                    <div class="post-slide mb2">
+                                        <img src="../assets/images/drama-13.jpg" alt="drama">
+                                    </div>
+                                    <ul class="post-hashtag text-gray-300 fz-mini mb6 d-flex">
+                                        <li><a href="#">#聊劇情</a></li>
+                                        <li><a href="#">#挑燈夜戰追劇</a></li>
+                                        <li><a href="#">#不看會死</a></li>
+                                    </ul>
+                                    <div class="post-content mb6">
+                                        <div class="chat-item d-flex align-items-center ">
+                                            <a href="#" class="userchat-avatar rounded-circle mr2 align-self-start">
+                                                <img src="../assets/images/avatar-6.png" alt="avartar" class="rounded-circle">
+                                            </a>
+                                            <div class="d-flex flex-column flex-sm-row align-items-sm-center justify-content-sm-between w-100">
+                                                <div class="chat-content mb-sm1">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="fz-3">阿成：</span>
+                                                        <ul class="d-flex chat-action">
+                                                            <li class="fz-3 text-gray-300"><a href="#"><i><ins>嚼勁先生</ins></i></a></a>&nbsp;cos</li>
+                                                            <li class="fz-3 text-gray-300"><a href="#">回覆</a></li>
+                                                            <li class="fz-3 text-gray-300"><a href="#">檢舉</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div>
+                                                        <p>爆炸好看欸👍我只花三天就追完40集🤣</p>
+                                                    </div>
+                                                </div>
+                                                <div class="chat-note d-flex align-items-center">
+                                                    <span class="text-gray-300 fz-3 mr5 mr-sm2">6小時</span>
+                                                    <a href="#" class="like-btn text-center bg-gray-400 border-r1 text-gray-300 d-flex justify-content-center d-sm-block active px-sm1">
+                                                        <i class="bi bi-activity d-block fz-4 mr-sm1"></i>
+                                                        <span class="d-block fz-3">2K.6</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chat-item d-flex align-items-center ml12 ml-sm4">
+                                            <a href="#" class="userchat-avatar rounded-circle mr2 align-self-start">
+                                                <img src="../assets/images/avatar-3.png" alt="avartar" class="rounded-circle">
+                                            </a>
+                                            <div class="d-flex flex-column flex-sm-row align-items-sm-center justify-content-sm-between w-100">
+                                                <div class="chat-content mb-sm1">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="fz-3">薛芳菲：</span>
+                                                        <ul class="d-flex chat-action">
+                                                            <li class="fz-3 text-gray-300"><a href="#"><i><ins>于小姐</ins></i></a></a>&nbsp;cos</li>
+                                                            <li class="fz-3 text-gray-300"><a href="#">編輯</a></li>
+                                                            <li class="fz-3 text-gray-300"><a href="#">刪除</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="text-primary mr2">@阿成</span>
+                                                        <p>我在看我自己演的新戲哈哈🤪</p>
+                                                    </div>
+                                                </div>
+                                                <div class="chat-note d-flex align-items-center">
+                                                    <span class="text-gray-300 fz-3 mr5 mr-sm2">2小時</span>
+                                                    <a href="#" class="like-btn text-center bg-gray-400 border-r1 text-gray-300 d-flex justify-content-center d-sm-block px-sm1">
+                                                        <i class="bi bi-activity d-block fz-4 mr-sm1"></i>
+                                                        <span class="d-block fz-3">368</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chat-item d-flex align-items-center ml12 ml-sm4">
+                                            <a href="#" class="userchat-avatar rounded-circle mr2 align-self-start">
+                                                <img src="../assets/images/avatar-2.png" alt="avartar" class="rounded-circle">
+                                            </a>
+                                            <div class="d-flex flex-column flex-sm-row align-items-sm-center justify-content-sm-between w-100">
+                                                <div class="chat-content mb-sm1">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="fz-3">劉娜比：</span>
+                                                        <ul class="d-flex chat-action">
+                                                            <li class="fz-3 text-gray-300"><a href="#"><i><ins>安小姐</ins></i></a></a>&nbsp;cos</li>
+                                                            <li class="fz-3 text-gray-300"><a href="#">回覆</a></li>
+                                                            <li class="fz-3 text-gray-300"><a href="#">檢舉</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="text-primary mr2">@薛芳菲</span>
+                                                        <p>WOW芳菲姐  妳演技真的很強💪XDDD</p>
+                                                    </div>
+                                                </div>
+                                                <div class="chat-note d-flex align-items-center">
+                                                    <span class="text-gray-300 fz-3 mr5 mr-sm2">剛剛</span>
+                                                    <a href="#" class="like-btn text-center bg-gray-400 border-r1 text-gray-300 d-flex justify-content-center d-sm-block px-sm1">
+                                                        <i class="bi bi-activity d-block fz-4 mr-sm1"></i>
+                                                        <span class="d-block fz-3">99</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chat-item d-flex align-items-center ">
+                                            <a href="#" class="userchat-avatar rounded-circle mr2 align-self-start">
+                                                <img src="../assets/images/avatar-5.png" alt="avartar" class="rounded-circle">
+                                            </a>
+                                            <div class="d-flex flex-column flex-sm-row align-items-sm-center justify-content-sm-between w-100">
+                                                <div class="chat-content mb-sm1">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="fz-3">五條悟：</span>
+                                                        <ul class="d-flex chat-action">
+                                                            <li class="fz-3 text-gray-300"><a href="#"><i><ins>Eric先生</ins></i></a></a>&nbsp;cos</li>
+                                                            <li class="fz-3 text-gray-300"><a href="#">回覆</a></li>
+                                                            <li class="fz-3 text-gray-300"><a href="#">檢舉</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div>
+                                                        <p>我還真沒看過這部，真的很好看嗎👀</p>
+                                                    </div>
+                                                </div>
+                                                <div class="chat-note d-flex align-items-center">
+                                                    <span class="text-gray-300 fz-3 mr5 mr-sm2">1天</span>
+                                                    <a href="#" class="like-btn text-center bg-gray-400 border-r1 text-gray-300 d-flex justify-content-center d-sm-block px-sm1">
+                                                        <i class="bi bi-activity d-block fz-4 mr-sm1"></i>
+                                                        <span class="d-block fz-3">58</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post-more text-center">
+                                        <a href="#" class="fz-3 text-gray-300">看更多69則留言</a>
+                                    </div>
+                                </div>
+                                <div class="chat-card-foot d-flex ">
+                                    <div class="myreply-avatar rounded-circle mr2">
+                                        <img src="../assets/images/avatar-3.png" alt="avatar" class="rounded-circle">
+                                    </div>
+                                    <form action="#" class="reply w-100 d-flex position-relative">
+                                        <input type="text" class="form-control reply-bar " id="chatTxt" name="chatTxt" placeholder="聊點什麼串門子..." value="">
+                                        <button type="submit" class="btn reply-btn position-absolute"><i class="bi bi-send"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap pl9 pb4  position-relative">
+                            <div class="chat-card bg-gray-500 border-r2 p6">
+                                <div class="chat-card-head d-flex align-items-center mb2">
+                                    <a href="#" class="poster-avatar rounded-circle mr2">
+                                        <img src="../assets/images/avatar-1.png" alt="avartar" class="rounded-circle">
+                                    </a>
+                                    <div class="chat-info d-flex align-items-center justify-content-between w-100">
+                                        <div class="intro d-flex flex-column flex-sm-row ">
+                                            <h2 class="fz-5 fw-4 mr5 ">串主 浩克</h2>
+                                            <div>
+                                                <span class="fz-3 text-gray-300">復仇者聯盟｜</span>
+                                                <a href="#" class="fz-3 text-gray-300"><i><ins>安東尼</ins>&nbsp;cos</i></a>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="func mr5 mr-sm1">
+                                                <a href="#"><i class="bi bi-three-dots d-block"></i></a>
+                                                <span class="d-block text-gray-300">#2</span>
+                                            </div>
+                                            <a href="#" class="like-btn-head text-center bg-gray-400 border-r1 text-gray-300">
+                                                <i class="bi bi-activity d-block fz-4"></i>
+                                                <span class="d-block fz-3">222</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat-card-body mb6">
+                                    <div class="post-slide mb2">
+                                        <img src="../assets/images/drama-14.jpg" alt="drama">
+                                    </div>
+                                    <ul class="post-hashtag text-gray-300 fz-mini mb6 d-flex">
+                                        <li><a href="#">#聊劇情</a></li>
+                                        <li><a href="#">#喬恩好壞壞</a></li>
+                                        <li><a href="#">#繋出老命追劇</a></li>
+                                    </ul>
+                                    <div class="post-content mb6">
+                                        <div class="chat-item d-flex align-items-center ">
+                                            <a href="#" class="userchat-avatar rounded-circle mr2 align-self-start">
+                                                <img src="../assets/images/avatar-10.png" alt="avartar" class="rounded-circle">
+                                            </a>
+                                            <div class="d-flex flex-column flex-sm-row align-items-sm-center justify-content-sm-between w-100">
+                                                <div class="chat-content mb-sm1">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="fz-3">文同珢：</span>
+                                                        <ul class="d-flex chat-action">
+                                                            <li class="fz-3 text-gray-300"><a href="#"><i><ins>Hannah</ins></i></a></a>&nbsp;cos</li>
+                                                            <li class="fz-3 text-gray-300"><a href="#">回覆</a></li>
+                                                            <li class="fz-3 text-gray-300"><a href="#">檢舉</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div>
+                                                        <p>看巧恩演壞人也是挺過癮的~我的心撲通撲通地狂跳😍</p>
+                                                    </div>
+                                                </div>
+                                                <div class="chat-note d-flex align-items-center">
+                                                    <span class="text-gray-300 fz-3 mr5 mr-sm2">30分鐘</span>
+                                                    <a href="#" class="like-btn text-center bg-gray-400 border-r1 text-gray-300 d-flex justify-content-center d-sm-block px-sm1">
+                                                        <i class="bi bi-activity d-block fz-4 mr-sm1"></i>
+                                                        <span class="d-block fz-3">147</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chat-item d-flex align-items-center ml12 ml-sm4">
+                                            <a href="#" class="userchat-avatar rounded-circle mr2 align-self-start">
+                                                <img src="../assets/images/avatar-9.png" alt="avartar" class="rounded-circle">
+                                            </a>
+                                            <div class="d-flex flex-column flex-sm-row align-items-sm-center justify-content-sm-between w-100">
+                                                <div class="chat-content mb-sm1">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="fz-3">熊麻吉：</span>
+                                                        <ul class="d-flex chat-action">
+                                                            <li class="fz-3 text-gray-300"><a href="#"><i><ins>Barret</ins></i></a></a>&nbsp;cos</li>
+                                                            <li class="fz-3 text-gray-300"><a href="#">回覆</a></li>
+                                                            <li class="fz-3 text-gray-300"><a href="#">檢舉</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="text-primary mr2">@文同珢</span>
+                                                        <p>就跟我看到妳一樣會心跳加速❤️❤️</p>
+                                                    </div>
+                                                </div>
+                                                <div class="chat-note d-flex align-items-center">
+                                                    <span class="text-gray-300 fz-3 mr5 mr-sm2">10分鐘</span>
+                                                    <a href="#" class="like-btn text-center bg-gray-400 border-r1 text-gray-300 d-flex justify-content-center d-sm-block px-sm1 active">
+                                                        <i class="bi bi-activity d-block fz-4 mr-sm1"></i>
+                                                        <span class="d-block fz-3">1.3K</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chat-item d-flex align-items-center ml12 ml-sm4">
+                                            <a href="#" class="userchat-avatar rounded-circle mr2 align-self-start">
+                                                <img src="../assets/images/avatar-8.png" alt="avartar" class="rounded-circle">
+                                            </a>
+                                            <div class="d-flex flex-column flex-sm-row align-items-sm-center justify-content-sm-between w-100">
+                                                <div class="chat-content mb-sm1">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="fz-3">張滿月：</span>
+                                                        <ul class="d-flex chat-action">
+                                                            <li class="fz-3 text-gray-300"><a href="#"><i><ins>樂樂</ins></i></a></a>&nbsp;cos</li>
+                                                            <li class="fz-3 text-gray-300"><a href="#">回覆</a></li>
+                                                            <li class="fz-3 text-gray-300"><a href="#">檢舉</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="text-primary mr2">@熊麻吉</span>
+                                                        <p>嗶嗶!!警察先生這邊有色熊出沒👻🙈</p>
+                                                    </div>
+                                                </div>
+                                                <div class="chat-note d-flex align-items-center">
+                                                    <span class="text-gray-300 fz-3 mr5 mr-sm2">1分鐘</span>
+                                                    <a href="#" class="like-btn text-center bg-gray-400 border-r1 text-gray-300 d-flex justify-content-center d-sm-block px-sm1 active">
+                                                        <i class="bi bi-activity d-block fz-4 mr-sm1"></i>
+                                                        <span class="d-block fz-3">3.6M</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chat-item d-flex align-items-center ml12 ml-sm4">
+                                            <a href="#" class="userchat-avatar rounded-circle mr2 align-self-start">
+                                                <img src="../assets/images/avatar-1.png" alt="avartar" class="rounded-circle">
+                                            </a>
+                                            <div class="d-flex flex-column flex-sm-row align-items-sm-center justify-content-sm-between w-100">
+                                                <div class="chat-content mb-sm1">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="fz-3">浩克：</span>
+                                                        <ul class="d-flex chat-action">
+                                                            <li class="fz-3 text-gray-300"><a href="#"><i><ins>安東尼</ins></i></a></a>&nbsp;cos</li>
+                                                            <li class="fz-3 text-gray-300"><a href="#">回覆</a></li>
+                                                            <li class="fz-3 text-gray-300"><a href="#">檢舉</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div>
+                                                        <span class="text-primary mr2">@熊麻吉</span>
+                                                        <p>公然告白好害羞😝</p>
+                                                    </div>
+                                                </div>
+                                                <div class="chat-note d-flex align-items-center">
+                                                    <span class="text-gray-300 fz-3 mr5 mr-sm2">1天</span>
+                                                    <a href="#" class="like-btn text-center bg-gray-400 border-r1 text-gray-300 d-flex justify-content-center d-sm-block px-sm1">
+                                                        <i class="bi bi-activity d-block fz-4 mr-sm1"></i>
+                                                        <span class="d-block fz-3">58</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat-card-foot d-flex ">
+                                    <div class="myreply-avatar rounded-circle mr2">
+                                        <img src="../assets/images/avatar-3.png" alt="avatar" class="rounded-circle">
+                                    </div>
+                                    <form action="#" class="reply w-100 d-flex position-relative">
+                                        <input type="text" class="form-control reply-bar " id="chatTxt" name="chatTxt" placeholder="聊點什麼串門子..." value="">
+                                        <button type="submit" class="btn reply-btn position-absolute"><i class="bi bi-send"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap pl9 pb4  position-relative">
+                            <div class="chat-card bg-gray-500 border-r2 p6">
+                                <div class="chat-card-head d-flex align-items-center mb2">
+                                    <a href="#" class="poster-avatar rounded-circle mr2">
+                                        <img src="../assets/images/avatar-11.png" alt="avartar" class="rounded-circle">
+                                    </a>
+                                    <div class="chat-info d-flex align-items-center justify-content-between w-100">
+                                        <div class="intro d-flex flex-column flex-sm-row ">
+                                            <h2 class="fz-5 fw-4 mr5 ">串主 伊格西</h2>
+                                            <div>
+                                                <span class="fz-3 text-gray-300">金牌特務｜</span>
+                                                <a href="#" class="fz-3 text-gray-300"><i><ins>卡斯伯</ins>&nbsp;cos</i></a>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="func mr5 mr-sm1">
+                                                <a href="#"><i class="bi bi-three-dots d-block"></i></a>
+                                                <span class="d-block text-gray-300">#3</span>
+                                            </div>
+                                            <a href="#" class="like-btn-head text-center bg-gray-400 border-r1 text-gray-300 active">
+                                                <i class="bi bi-activity d-block fz-4"></i>
+                                                <span class="d-block fz-3">666</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat-card-body mb6">
+                                    <div class="post-slide mb2">
+                                        <div class="txt-img d-flex justify-content-center align-items-center text-center">
+                                            <p class="text-gray-600 fz-6 fw-7">如果這是天命<br> 我非要逆天而行</p>
+                                        </div>
+                                    </div>
+                                    <ul class="post-hashtag text-gray-300 fz-mini mb6 d-flex">
+                                        <li><a href="#">#聊劇梗</a></li>
+                                        <li><a href="#">#女主大招</a></li>
+                                        <li><a href="#">#追完了想再二刷</a></li>
+                                    </ul>
+                                    <div class="post-content mb6">
+                                        <div class="chat-item d-flex align-items-center ">
+                                            <a href="#" class="userchat-avatar rounded-circle mr2 align-self-start">
+                                                <img src="../assets/images/avatar-11.png" alt="avartar" class="rounded-circle">
+                                            </a>
+                                            <div class="d-flex flex-column flex-sm-row align-items-sm-center justify-content-sm-between w-100">
+                                                <div class="chat-content mb-sm1">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="fz-3">伊格西：</span>
+                                                        <ul class="d-flex chat-action">
+                                                            <li class="fz-3 text-gray-300"><a href="#"><i><ins>卡斯伯</ins></i></a></a>&nbsp;cos</li>
+                                                            <li class="fz-3 text-gray-300"><a href="#">回覆</a></li>
+                                                            <li class="fz-3 text-gray-300"><a href="#">檢舉</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div>
+                                                        <p>這句真的超派~我也常常逆天而行😅尤其是遇到複雜的程式碼，我非得要寫出來不可😎</p>
+                                                    </div>
+                                                </div>
+                                                <div class="chat-note d-flex align-items-center">
+                                                    <span class="text-gray-300 fz-3 mr5 mr-sm2">1周</span>
+                                                    <a href="#" class="like-btn text-center bg-gray-400 border-r1 text-gray-300 d-flex justify-content-center d-sm-block px-sm1">
+                                                        <i class="bi bi-activity d-block fz-4 mr-sm1"></i>
+                                                        <span class="d-block fz-3">888</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chat-item d-flex align-items-center ml12 ml-sm4">
+                                            <a href="#" class="userchat-avatar rounded-circle mr2 align-self-start">
+                                                <img src="../assets/images/avatar-12.png" alt="avartar" class="rounded-circle">
+                                            </a>
+                                            <div class="d-flex flex-column flex-sm-row align-items-sm-center justify-content-sm-between w-100">
+                                                <div class="chat-content mb-sm1">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="fz-3">格魯特：</span>
+                                                        <ul class="d-flex chat-action">
+                                                            <li class="fz-3 text-gray-300"><a href="#"><i><ins>洧杰</ins></i></a></a>&nbsp;cos</li>
+                                                            <li class="fz-3 text-gray-300"><a href="#">回覆</a></li>
+                                                            <li class="fz-3 text-gray-300"><a href="#">檢舉</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="text-primary mr2">@伊格西</span>
+                                                        <p>I'm Groot YOYO I'm Groot</p>
+                                                    </div>
+                                                </div>
+                                                <div class="chat-note d-flex align-items-center">
+                                                    <span class="text-gray-300 fz-3 mr5 mr-sm2">4天</span>
+                                                    <a href="#" class="like-btn text-center bg-gray-400 border-r1 text-gray-300 d-flex justify-content-center d-sm-block px-sm1 active">
+                                                        <i class="bi bi-activity d-block fz-4 mr-sm1"></i>
+                                                        <span class="d-block fz-3">7.2K</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chat-item d-flex align-items-center ml12 ml-sm4">
+                                            <a href="#" class="userchat-avatar rounded-circle mr2 align-self-start">
+                                                <img src="../assets/images/avatar-11.png" alt="avartar" class="rounded-circle">
+                                            </a>
+                                            <div class="d-flex flex-column flex-sm-row align-items-sm-center justify-content-sm-between w-100">
+                                                <div class="chat-content mb-sm1">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="fz-3">伊格西：</span>
+                                                        <ul class="d-flex chat-action">
+                                                            <li class="fz-3 text-gray-300"><a href="#"><i><ins>卡斯伯</ins></i></a></a>&nbsp;cos</li>
+                                                            <li class="fz-3 text-gray-300"><a href="#">回覆</a></li>
+                                                            <li class="fz-3 text-gray-300"><a href="#">檢舉</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="text-primary mr2">@格魯特</span>
+                                                        <p>...</p>
+                                                    </div>
+                                                </div>
+                                                <div class="chat-note d-flex align-items-center">
+                                                    <span class="text-gray-300 fz-3 mr5 mr-sm2">1分鐘</span>
+                                                    <a href="#" class="like-btn text-center bg-gray-400 border-r1 text-gray-300 d-flex justify-content-center d-sm-block px-sm1 ">
+                                                        <i class="bi bi-activity d-block fz-4 mr-sm1"></i>
+                                                        <span class="d-block fz-3">464</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat-card-foot d-flex ">
+                                    <div class="myreply-avatar rounded-circle mr2">
+                                        <img src="../assets/images/avatar-3.png" alt="avatar" class="rounded-circle">
+                                    </div>
+                                    <form action="#" class="reply w-100 d-flex position-relative">
+                                        <input type="text" class="form-control reply-bar " id="chatTxt" name="chatTxt" placeholder="聊點什麼串門子..." value="">
+                                        <button type="submit" class="btn reply-btn position-absolute"><i class="bi bi-send"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+
+        <%- include('./layout/footer'); -%>
+
+        <script type="module" src="../main.js"></script>
+    </body>
+</html>

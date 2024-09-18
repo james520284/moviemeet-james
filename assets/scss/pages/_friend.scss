@@ -37,9 +37,11 @@
                 color: $primary;
             }
         }
+        
         .search-btn {
             top: 20%;
             right: 5%;
+            
         }
 
 
@@ -65,9 +67,17 @@
     .sec2{
         .search{
             width: 25%;
+            .form-control {
+                color: $gray-400;
+                padding:10px 8px;
+                background-color: transparent;
+            }
             &-btn {
                 top: 20%;
                 right: 5%;
+            }
+            ::placeholder{
+                color: $gray-400;
             }
         }
         

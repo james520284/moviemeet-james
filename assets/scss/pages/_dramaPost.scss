@@ -1,0 +1,192 @@
+.dramaPost-main{
+    .chat-ic {
+        transform: scaleX(-1);
+    }
+    .chat-btn{
+        background-image: linear-gradient(120deg,rgba(255, 255, 255,1),rgba(255, 255, 255, .5));
+        &:hover{
+            background-image: linear-gradient(120deg, rgba(255, 255, 255, .3), rgba(255, 255, 255, 0));
+            background-color: $gray-600;
+            color: $gray-200;
+        }
+    }
+    .search {
+        .form-control {
+            color: $gray-400;
+            border: 1px solid $gray-400;
+            padding: 8px 8px;
+            background-color: transparent;
+        }
+        &-btn {
+            top: 20%;
+            right: 5%;
+        }
+        ::placeholder {
+            color: $gray-400;
+        }
+    }
+    .sort-btn {
+        border: 1px solid $gray-400;
+        line-height: 0;
+        &:hover{
+            background-color: $gray-400;
+        }
+    }
+    .intro-slide{
+        width: 100%;
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .drama-title{
+        background-color: rgba(10, 10, 10,.8);
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .aside-link li:hover{
+        text-shadow: 0px 0px 3px white;
+    }
+    .poster-avatar{
+        width: 48px;
+        height: 48px;
+        border: 2px solid white;
+        position: absolute;
+        top: 24px;
+        left: -24px;
+        z-index: 1;
+        flex-shrink:0 ;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .wrap{
+        border-left: 1px solid $gray-300;
+        margin-bottom: 16px;
+        &::after {
+            content: '';
+            position: absolute;
+            height: 88px;
+            width: 48px;
+            background-color: $gray-600;
+            top: 0px;
+            left: -24px;
+            z-index: 0;
+        }
+    }
+        
+    .post-slide{
+        max-width: 960px;
+        height: 240px;
+        img{
+            object-fit: cover;
+            // object-position: top;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .txt-img{
+        max-width: 960px;
+        height: 240px;
+        background-color: $primary;
+    }
+    .post-hashtag li+li{
+        margin-left: 12px;
+    }
+    .userchat-avatar,
+    .mychat-avatar{
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .like-btn-head,
+    .like-btn{
+        padding-top: 4px;
+        width: 42px;
+        height: 42px;
+        &.active {
+            background-color: $gray-600;
+            color: $primary;
+        }
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    .chat-item+.chat-item{
+        margin-top: 16px;
+    }
+    .chat-action li+li{
+        margin-left: 0px;
+        &::before{
+            content: '｜';
+
+        }
+    }
+    .myreply-avatar {
+        width: 37px;
+        height: 37px;
+        flex-shrink: 0;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .reply{
+        &-bar{
+            color: $gray-300;
+            background-color: transparent;
+            border: 1px solid $gray-400;
+        }
+        ::placeholder {
+            font-size: 14px;
+            color: $gray-300;
+        }
+        &-btn{
+            color:$gray-300;
+            padding: 0;
+            top: 20%;
+            right:2%;
+            
+        }
+    }
+
+
+    @include rwd-lg-max{
+        .wrap{
+            padding: 0;
+            &::after{
+                display: none;
+            }
+            border: none;
+        }
+        .poster-avatar{
+            position: static;
+        }
+    }
+    @include rwd-sm-max {
+        .search{
+            width: 100%;
+        }
+        .like-btn{
+            padding-top: 0;
+            width:60px;
+            height: auto;
+            background-color: $gray-500;
+        }
+        .chat-content{
+            padding: 4px;
+            border-radius: 4px;
+            background-color: #333333;
+        }
+    }
+}
