@@ -17,7 +17,7 @@
                     <div class="col-lg-5">
                         <div class="bg-gray-500 p6 border-r2">
                             <div class="function d-flex flex-column  flex-sm-row align-items-sm-center mb4">
-                                <a href="#" class="chat-btn py2 px5 text-gray-500 border-r1 d-flex justify-content-center align-items-center mr2 mr-sm0 mb-sm2">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#chatModal" class="chat-btn py2 px5 text-gray-500 border-r1 d-flex justify-content-center align-items-center mr2 mr-sm0 mb-sm2">
                                     <span class="chat-ic material-symbols-outlined mr1">add_comment</span>
                                     <span>發聊串</span>
                                 </a>
@@ -311,7 +311,7 @@
                                                     </div>
                                                     <div class="d-flex align-items-center">
                                                         <span class="text-primary mr2">@文同珢</span>
-                                                        <p>就跟我看到妳一樣會心跳加速❤️❤️</p>
+                                                        <p>就跟黑暗榮耀裡的暗黑慧喬一樣壞得過癮❤️</p>
                                                     </div>
                                                 </div>
                                                 <div class="chat-note d-flex align-items-center">
@@ -323,7 +323,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="chat-item d-flex align-items-center ml12 ml-sm4">
+                                        <div class="chat-item d-flex align-items-center">
                                             <a href="#" class="userchat-avatar rounded-circle mr2 align-self-start">
                                                 <img src="../assets/images/avatar-8.png" alt="avartar" class="rounded-circle">
                                             </a>
@@ -338,8 +338,8 @@
                                                         </ul>
                                                     </div>
                                                     <div class="d-flex align-items-center">
-                                                        <span class="text-primary mr2">@熊麻吉</span>
-                                                        <p>嗶嗶!!警察先生這邊有色熊出沒👻🙈</p>
+                                                        
+                                                        <p>嗶嗶!!警察先生陳喬恩魔化了快抓走👻🙈</p>
                                                     </div>
                                                 </div>
                                                 <div class="chat-note d-flex align-items-center">
@@ -366,8 +366,8 @@
                                                         </ul>
                                                     </div>
                                                     <div>
-                                                        <span class="text-primary mr2">@熊麻吉</span>
-                                                        <p>公然告白好害羞😝</p>
+                                                        <span class="text-primary mr2">@張滿月</span>
+                                                        <p>笑死😝</p>
                                                     </div>
                                                 </div>
                                                 <div class="chat-note d-flex align-items-center">
@@ -473,7 +473,7 @@
                                                     </div>
                                                     <div class="d-flex align-items-center">
                                                         <span class="text-primary mr2">@伊格西</span>
-                                                        <p>I'm Groot YOYO I'm Groot</p>
+                                                        <p>I'm Groot I'm Groot I'm Grooooooooooot</p>
                                                     </div>
                                                 </div>
                                                 <div class="chat-note d-flex align-items-center">
@@ -528,8 +528,98 @@
                         </div>
                     </div>
                 </div>
+                <!-- 聊串modal開始 -->
+                <div class="modal fade" id="chatModal" tabindex="-1" aria-labelledby="chatModal" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-gray-600 border broder-white mt8">
+                            <div class="modal-header position-relative">
+                                <h6 class="modal-title text-primary fz-sm4" id="chatModalLabel">發佈聊串</h6>
+                                <button type="button" class="btn-close modal-btn-close  position-absolute" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-circle text-white fz-6 bg-gray-600 "></i></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="#">
+                                <div class="mb7 mb-sm6 d-flex  flex-column flex-sm-row align-items-sm-center">
+                                    <div class="subtitle mb-sm2">
+                                    <span class="text-danger mr1">*</span><span>我要聊</span>
+                                    </div>
+                                    <div class="option">
+                                    <input type="radio" class="btn-check" name="chatType" id="normalChatType" autocomplete="off" checked>
+                                    <label class="btn btn-outline-primary mr2 px8 px-sm4" for="normalChatType">劇情</label>
+                                    <input type="radio" class="btn-check" name="chatType" id="kusoChatType" autocomplete="off">
+                                    <label class="btn btn-outline-primary px8 px-sm4" for="kusoChatType">劇梗</label>
+                                    </div>
+                                </div>
+                                <div class="mb7 mb-sm6 d-flex  flex-column flex-sm-row align-items-sm-center">
+                                    <div class="subtitle mb-sm2">
+                                    <span class="text-danger mr1">*</span><span>有沒有雷</span>
+                                    </div>
+                                    <div class="option">
+                                    <input type="radio" class="btn-check" name="spoilType" id="noSpoilType" autocomplete="off" checked>
+                                    <label class="btn btn-outline-primary mr2 px8 px-sm4" for="noSpoilType">無雷</label>
+                                    <input type="radio" class="btn-check" name="spoilType" id="littleSpoilType" autocomplete="off">
+                                    <label class="btn btn-outline-primary mr2 px8 px-sm4" for="littleSpoilType">微雷</label>
+                                    <input type="radio" class="btn-check" name="spoilType" id="suoerSpoilType" autocomplete="off">
+                                    <label class="btn btn-outline-primary px8 px-sm4" for="suoerSpoilType">超雷</label>
+                                    </div>
+                                </div>
+                                <div class="mb7 mb-sm3">
+                                    <span class="text-danger mr1">*</span><label for="chatTextarea" class="form-label">聊點什麼</label>
+                                    <textarea class="form-control chat-textarea" id="chatTextarea" rows="6" placeholder="最多200個字"></textarea>
+                                </div>
+                                <div class="mb7 mb-sm6">
+                                    <span class="mb2">劇照</span><span class="text-gray-300 fz-mini">&nbsp;(最多6張)</span>
+                                    <label for="dramaImg" class="form-label uploadDramaImg w-100">
+                                        <div class="uploadStyle d-flex justify-content-center align-items-center fz-8 fz-sm5 mb3"><i class="bi bi-plus-lg"></i></div>
+                                    </label>
+                                    <input type="file" accept="image/*" class="form-control bg-gray-600" id="dramaImg" name="dramaImg" value="">
+                                    <div class="row gy-4">
+                                        <div class="col-4">
+                                        <div class="img-item">
+                                            <img src="../assets/images/drama-1.jpg" alt="drama">
+                                            <button type="button" class="btn-close img-btn-close p0" aria-label="Close"><i class="bi bi-x-circle text-white  bg-gray-600 border-r25"></i></button>
+                                        </div>
+                                        </div>
+                                        <div class="col-4">
+                                        <div class="img-item">
+                                            <img src="../assets/images/drama-2.png" alt="drama">
+                                            <button type="button" class="btn-close img-btn-close p0" aria-label="Close"><i class="bi bi-x-circle text-white  bg-gray-600 border-r25"></i></button>
+                                        </div>
+                                        </div>
+                                        <div class="col-4">
+                                        <div class="img-item">
+                                            <img src="../assets/images/drama-3.jpg" alt="drama">
+                                            <button type="button" class="btn-close img-btn-close p0" aria-label="Close"><i class="bi bi-x-circle text-white  bg-gray-600 border-r25"></i></button>
+                                        </div>
+                                        </div>
+                                        <div class="col-4">
+                                        <div class="img-item">
+                                            <img src="../assets/images/drama-4.jpg" alt="drama">
+                                            <button type="button" class="btn-close img-btn-close p0" aria-label="Close"><i class="bi bi-x-circle text-white  bg-gray-600 border-r25"></i></button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb7 mb-sm3">
+                                    <label for="chatHashtag" class="form-label">#Hashtag</label>
+                                    <div class="d-flex align-items-center mb2">
+                                        <input type="text" class="form-control bg-gray-600" id="chatHashtag" name="chatHashtag" placeholder="每一組hashtag最多10個字" value="">
+                                        <a href="#"><i class="bi bi-plus-circle text-primary ml4"></i></a>
+                                    </div>
+                                    <div class="hashtag d-flex align-items-center">
+                                        <a href="#" class="text-dark bg-primary px2 py1 fz-3 fw-7 rounded">#熬夜都想看</a>
+                                        <a href="#" class="text-dark bg-primary px2 py1 fz-3 fw-7 rounded">#女主角好正</a>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer ">
+                                <button type="submit" class="btn btn-outline-primary w-100">發佈</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 聊串modal結束 -->
             </div>
-            
         </main>
 
         <%- include('./layout/footer'); -%>
