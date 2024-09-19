@@ -1,27 +1,9 @@
 .myCosplay-main{
     .sec1{
-        .deco{
-            top:-8px;
-            left:-64px;
-            transform: scale(1.4);
-        }
         .add-btn{
             transition: .5s;
             &:hover {
                 color: $primary;
-            }
-        }
-        @include rwd-md-max {
-            .deco {
-                top: -16px;
-                transform: scale(1);
-            }
-        }
-        @include rwd-sm-max {
-            .deco {
-                top: -28px;
-                left: -52px;
-                transform: scale(.8);
             }
         }
     }
